@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 import { Textarea } from "@material-tailwind/react";
 // import { Typography } from "@material-tailwind/react";
 
-export default function () {
+export default function Page() {
 
   const LINKS = [
     {
@@ -200,10 +200,10 @@ export default function () {
                   <br className="hidden lg:block" /> foundation in PHP, JavaScript, HTML, CSS, React, and Next Js I specialize in creating 
                   <br className="hidden lg:block" /> dynamic and responsive web applications. My goal is to leverage my technical skills and creativity 
                   <br className="hidden lg:block" /> to build innovative solutions that make a difference. Explore my projects and get in touch to discuss 
-                  <br className="hidden lg:block" /> how we can collaborate on exciting new ventures <a href="https://novascriptsolutions.com/" className="text-blue-700 hover:cursor-pointer font-bold">Learn More</a></label>
+                  <br className="hidden lg:block" /> how we can collaborate on exciting new ventures <a href="https://novascriptsolutions.com/" target='_blank' className="text-blue-700 hover:cursor-pointer font-bold">Learn More</a></label>
                 </div>
                 <div className="w-full flex justify-center lg:justify-start mt-2">
-                  <a href="https://github.com/hililk" className="p-2 rounded-2xl mt-5 bg-gradient-to-r from-indigo-500 to-purple-500  group transition duration-200 text-white hover:bg-transparent">
+                  <a href="https://github.com/hililk" onClick="https://github.com/hililk" target='_blank' className="p-2 rounded-2xl mt-5 bg-gradient-to-r from-indigo-500 to-purple-500  group transition duration-200 text-white hover:bg-transparent">
                     My Github Account
                   </a>
                 </div>
@@ -293,7 +293,7 @@ export default function () {
                   {/* <TextGenerateEffect words={"I am a full-stack developer with 2+ years of experience, I have a strong foundation in front-end & back-end development. I am skilled in creating user-friendly and responsive applications."}/>  */}
                   <label className="text-lg text-center lg:text-start font-light text-gray-500 mt-3 lg:text-2xl">
                     PCJT Java Institute For Advanced Technology is the University where I started Programming <br /> and keep the first step for Software Enginering. It offers an BSC(Hons) Degree from the <br />
-                    UK university birmingham city university. <a href="https://www.javainstitute.edu.lk/" className="text-blue-700 hover:cursor-pointer font-bold">Learn More</a></label>
+                    UK university birmingham city university. <a href="https://www.javainstitute.edu.lk/" target='_blank' className="text-blue-700 hover:cursor-pointer font-bold">Learn More</a></label>
 
                 </div>
               </div>
@@ -455,7 +455,7 @@ export default function () {
             variant="small"
             className="mb-4 text-center font-normal text-white md:mb-0"
           >
-            &copy; {currentYear} <a href="https://material-tailwind.com/">Material Tailwind</a>. All
+            &copy; {currentYear} <a href="https://material-tailwind.com/"  target='_blank'>Nova Script Solutions</a>. All
             Rights Reserved.
           </Typography>
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
@@ -468,7 +468,7 @@ export default function () {
                 />
               </svg>
             </Typography>
-            <Typography as="a" href="https://www.instagram.com/_hirusha_ashen_/" className="opacity-80 text-white transition-opacity hover:opacity-100">
+            <Typography as="a" href="https://www.instagram.com/_hirusha_ashen_/"  target='_blank' className="opacity-80 text-white transition-opacity hover:opacity-100">
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fill-rule="evenodd"
@@ -477,7 +477,7 @@ export default function () {
                 />
               </svg>
             </Typography>
-            <Typography as="a" href="https://github.com/hililk" className="opacity-80 text-white transition-opacity hover:opacity-100">
+            <Typography as="a" href="https://github.com/hililk"  target='_blank' className="opacity-80 text-white transition-opacity hover:opacity-100">
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fill-rule="evenodd"
