@@ -12,14 +12,6 @@ import {
 } from "@material-tailwind/react";
 import { Spotlight } from "@/components/ui/Spotlight";
 import { motion } from "framer-motion";
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
-import { cn } from "@/lib/utils/cn";
-import { Label } from "@/components/ui/input";
-import { Input } from "@/components/ui/label";
 import { Textarea } from "@material-tailwind/react";
 // import { Typography } from "@material-tailwind/react";
 
