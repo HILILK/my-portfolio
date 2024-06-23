@@ -157,7 +157,7 @@ export default function Page() {
 
 
 
-        <div className="w-full -z-50">
+        <div className="w-full">
           <motion.div
             initial={{
               opacity: 0,
@@ -173,13 +173,13 @@ export default function Page() {
             }}
           >
 
-            <div className="w-full rounded-md flex md:items-center md:justify-center overflow-hidden -z-50 p-5 lg:p-40" id="home">
+            <div className="w-full rounded-md flex md:items-center md:justify-center overflow-hidden -z-50 m-0" id="home">
               <Vortex
                 backgroundColor="black"
                 rangeY={500}
-                particleCount={50}
+                particleCount={30}
                 baseHue={10}
-                className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
+                className="flex items-center flex-col justify-center px-2 md:px-10 w-full"
               >
                 <Spotlight
                   className="-top-40 left-0 md:left-60 md:-top-20"
@@ -193,7 +193,7 @@ export default function Page() {
                   className="-top-40 left-0 md:left-60 md:-top-30"
                   fill="white"
                 />
-                <div className=" p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0 flex flex-col items-center">
+                <div className="p-4 pt-20 pb-20 max-w-7xl mx-auto z-10 w-full md:pt-10 flex flex-col items-center">
                   <div className="w-full flex justify-center lg:justify-start" id='home'>
                     <label className="text-lg text-center font-semibold text-blue-700">Hello, My Name is,</label>
                   </div>
@@ -211,7 +211,7 @@ export default function Page() {
                       <br className="hidden lg:block" /> how we can collaborate on exciting new ventures <a href="https://novascriptsolutions.com/" target='_blank' className="text-blue-700 hover:cursor-pointer font-bold">Learn More</a></label>
                   </div>
                   <div className="w-full flex justify-center lg:justify-start mt-2">
-                    <a href="https://github.com/hililk" onClick="https://github.com/hililk" target='_blank' className="p-4 rounded-full mt-5 bg-gradient-to-r from-indigo-500 to-purple-500  group transition duration-200 text-white hover:bg-transparent">
+                    <a href="https://github.com/hililk" target='_blank' className="p-4 rounded-full mt-5 bg-gradient-to-r from-indigo-500 to-purple-500 transition duration-200 text-white hover:bg-transparent">
                       My Github Account
                     </a>
                   </div>
@@ -219,13 +219,13 @@ export default function Page() {
               </Vortex>
             </div>
 
-            <div className="relative w-full rounded-md flex md:items-center md:justify-center overflow-hidden -z-5 p-5 lg:p-40" id="about">
+            <div className="w-full rounded-md flex md:items-center md:justify-center overflow-hidden -z-5 m-0" id="about">
             <Vortex
                 backgroundColor="black"
                 rangeY={500}
                 particleCount={50}
                 baseHue={10}
-                className="flex items-center flex-col justify-center px-2 md:px-10 w-full h-full"
+                className="flex items-center flex-col justify-center px-2 md:px-10 w-full"
               >
               {/* <Spotlight
                 className="-top-40 left-0 md:left-60 md:-top-20"
@@ -239,7 +239,7 @@ export default function Page() {
                 className="-top-40 left-0 md:left-60 md:-top-30"
                 fill="white"
               /> */}
-              <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-10 md:pt-0 flex flex-col items-center">
+              <div className="p-4 max-w-7xl mx-auto z-10 w-full pt-20 md:pt-0 flex flex-col items-center">
 
                 <div className="w-full flex justify-center lg:justify-start" id='home'>
                   <label className="text-2xl text-center font-semibold text-white">About Me</label>
@@ -248,7 +248,7 @@ export default function Page() {
                   <img src="/image/profile.jpg" className='h-52 rounded-3xl' />
                 </div>
 
-                <div className="w-full flex justify-center lg:justify-start mt-5">
+                <div className="w-full flex justify-center lg:justify-start mt-5 pt-10">
                   {/* <TextGenerateEffect words={"I am a full-stack developer with 2+ years of experience, I have a strong foundation in front-end & back-end development. I am skilled in creating user-friendly and responsive applications."}/>  */}
                   <label className="text-lg text-center lg:text-start font-light text-gray-500 mt-3 lg:text-2xl">
                     Hello, I am Hirusha Liyanage of the Software Company Nova Script Solutions(NSS). <br /> So, I am a Full Stack Software enginner in the company. But mostly, I am doing<br />
@@ -306,9 +306,9 @@ export default function Page() {
                 rangeY={500}
                 particleCount={50}
                 baseHue={10}
-                className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
-              ></Vortex>
-              <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0 flex flex-col items-center">
+                className="flex items-center flex-col justify-center px-2 md:px-10 w-full"
+              >
+              <div className="p-4 max-w-7xl mx-auto z-10 w-full pt-20 md:pt-0 flex flex-col items-center">
                 <div className="w-full flex justify-center lg:justify-start" id='home'>
                   <label className="text-2xl text-center font-semibold text-white">Education</label>
                 </div>
@@ -320,11 +320,12 @@ export default function Page() {
 
                 </div>
               </div>
+              </Vortex>
             </div>
 
 
 
-            <div className="w-full rounded-md flex md:items-center md:justify-center overflow-hidden -z-50 p-5 lg:p-40" id="projects">
+            <div className="w-full rounded-md flex md:items-center md:justify-center overflow-hidden -z-50" id="projects">
               {/* <Spotlight
                 className="-top-40 left-0 md:left-60 md:-top-20"
                 fill="blue"
@@ -342,29 +343,29 @@ export default function Page() {
                 rangeY={500}
                 particleCount={50}
                 baseHue={10}
-                className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
+                className="flex items-center flex-col justify-center px-2 md:px-10 w-full"
               >
-              <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0 flex flex-col items-center">
+              <div className="p-4 max-w-7xl mx-auto z-10 w-full pt-20 md:pt-0 flex flex-col items-center">
 
                 <div className="w-full flex justify-center lg:justify-start">
                   <label className="text-2xl text-center font-semibold text-white">My Projects</label>
                 </div>
 
-                <div className='w-full lg:flex'>
+                <div className='w-full xl:flex gap-3'>
 
-                  <div className='w-full lg:w-1/2'>
-                    <div className="w-full flex justify-center lg:justify-start mt-5 gap-10 mb-3">
+                  <div className='w-full xl:w-1/2'>
+                    <div className="w-full flex justify-center xl:justify-start mt-5 gap-10 mb-3">
                       <a href="#"><img src="/image/image1.png" className='lg:h-72 rounded-xl hover:bg-black hover:opacity-50 -z-50' /></a>
                     </div>
-                    <div className="w-full flex justify-center lg:justify-start mt-5 gap-10 mb-3">
-                      <label className="w-full text-lg text-center lg:text-start font-light text-gray-500 mt-3 lg:text-xl">
+                    <div className="w-full flex justify-center xl:justify-start mt-5 gap-10 mb-3">
+                      <label className="w-full text-lg text-center xl:text-start font-light text-gray-500 mt-3 lg:text-xl">
                         Techland. <br /> This an ecommerce web application developed by me. This ecommerce web application sells electronic items.</label>
                     </div>
                   </div>
 
-                  <div className='w-full lg:w-1/2'>
-                    <div className="w-full flex justify-center lg:justify-start mt-5 gap-10 mb-3">
-                      <a href="#"><img src="/image/image2.png" className='lg:h-72 rounded-xl hover:bg-black hover:opacity-50 -z-50' /></a>
+                  <div className='w-full xl:w-1/2'>
+                    <div className="w-full flex justify-center xl:justify-start mt-5 gap-10 mb-3">
+                      <a href="#"><img src="/image/image2.png" className='xl:h-72 rounded-xl hover:bg-black hover:opacity-50 -z-50' /></a>
                     </div>
                     <div className="w-full flex justify-center lg:justify-start mt-5 gap-10 mb-3">
                       <label className="w-full text-lg text-center lg:text-start font-light text-gray-500 mt-3 lg:text-xl">
@@ -378,7 +379,7 @@ export default function Page() {
               </Vortex>
             </div>
 
-            <div className="w-full rounded-md flex flex-col md:items-center md:justify-center overflow-hidden -z-50 p-5 lg:p-40" id="contact">
+            <div className="p-4 px-0 z-10 w-full pt-20 pb-20 md:pt-0 flex flex-col items-center overflow-hidden" id="contact">
               {/* <Spotlight
                 className="-top-40 left-0 md:left-60 md:-top-20"
                 fill="blue"
@@ -396,7 +397,7 @@ export default function Page() {
                 rangeY={500}
                 particleCount={50}
                 baseHue={10}
-                className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
+                className="flex items-center flex-col justify-center px-2 md:px-10 w-full"
               >
               <div className="p-4 max-w-7xl mx-auto z-10 w-full pt-20 md:pt-0 flex flex-col items-center">
                 <div className="w-full flex justify-center" >
@@ -405,8 +406,8 @@ export default function Page() {
 
 
                 <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input flex justify-center">
-                  <div class="relative flex flex-col text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
-                    <form class="max-w-screen-lg mt-8 mb-2 w-80 sm:w-96">
+                  <div class="flex flex-col text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
+                    <form class="max-w-screen-lg mt-8 w-80 sm:w-96">
                       <div class="flex flex-col gap-6 mb-1">
                         <h6
                           class="block -mb-3 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-white">
